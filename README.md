@@ -206,7 +206,7 @@ week1/
 
 ### Week 2 Study Guide
 📖 **Detailed guide for this week's concepts:**
-[Week 2: Function Calling & BOM/DOM](https://clumsy-humor-894.notion.site/5-Function-Calling-13554fed51a380999bf1d7d0bf46ec7e)
+[Week 2: BOM (Browser Object Model) & Window Manipulation](https://mastering-the-browser-d3eadl0.gamma.site/#bom-basics)
 
 ## 🛠️ Technologies Used
 
