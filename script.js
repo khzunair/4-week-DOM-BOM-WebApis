@@ -1,14 +1,9 @@
-// feedbackForm
-// nameInput
-// feedbackInput
-// feedbackList
-
 const form = document.getElementById("feedbackForm")
 const feedbackList = document.getElementById("feedbackList");
 
 
 try {
-    form.addEventListener("submit", function (e) {
+    form.addEventListener("submit" , function (e) {
         e.preventDefault();
 
     const nameInput = document.getElementById("nameInput").value.trim();
@@ -20,13 +15,17 @@ try {
     const deleteBtn = document.createElement("button");
     deleteBtn.innerText = "❌";
     deleteBtn.addEventListener("click", function () {
-        li.remove();
+        const confirmation = confirm("Are you sure you want to delete this feedback?");
+        if (confirmation){
+            li.remove();
+        } 
     });
 
     li.appendChild(deleteBtn);
     feedbackList.appendChild(li);
 
-    form.reset(); // Clear the form inputs
+    form.reset();
+    alert("Feedback submitted successfully!");
 
 })
 
