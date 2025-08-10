@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live User Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Week 3: Web APIs (Storage, Fetching Data & Network Requests)</h1>
+
+  <section id="user-section">
+    <h2>Local Storage .vs. Session Storage</h2>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button id="saveLocal">Save to LocalStorage</button>
+    <button id="saveSession">Save to SessionStorage</button>
+    <p id="savedData"></p>
+  </section>
+
+  <section id="data-section">
+    <h2>Random Joke from API</h2>
+    <button id="fetchJoke">Get Joke (Fetch API)</button>
+    <button id="xhrJoke">Get Joke (XHR)</button>
+    <p id="jokeDisplay"></p>
+  </section>
+
+  <section id="ws-section">
+    <h2>📡 WebSocket Messages</h2>
+    <ul id="messages"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

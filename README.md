@@ -4,7 +4,7 @@
 
 This repo series covers a **4-week intensive journey** through **DOM (Document Object Model)**, **BOM (Browser Object Model)**, and **Web APIs**. Each week builds upon the previous, creating a complete understanding of frontend web development fundamentals and advanced browser capabilities.
 
-**Current Focus**: This repository contains the **till Week 2** implementation, demonstrating BOM manipulation and Window objects through an interactive feedback form application.
+**Current Focus**: This repository now contains **till Week 3** implementations, demonstrating BOM manipulation, Window objects, Web APIs, storage solutions, and network requests through interactive applications.
 
 ## 📅 Complete 4-Week Curriculum
 
@@ -46,22 +46,25 @@ This repo series covers a **4-week intensive journey** through **DOM (Document O
 
 ---
 
-### **📅 Week 3: Web APIs (Storage, Fetching Data & Network Requests)** 🔜 **(Coming Soon)**
+### **📅 Week 3: Web APIs (Storage, Fetching Data & Network Requests)** ✅ **(Completed)**
 
-📌 **Concepts to Cover:**
-- LocalStorage & SessionStorage (Storing user data)
-- Fetch API (`fetch()`, handling JSON responses)
-- XMLHttpRequest (Legacy AJAX method)
-- Promises & Async/Await (Making API calls easier)
-- WebSockets (Real-time communication)
+📌 **Concepts Covered:**
+- **LocalStorage & SessionStorage** - Storing user data persistently and temporarily
+- **Fetch API** - Modern way to make HTTP requests (`fetch()`, handling JSON responses)
+- **XMLHttpRequest** - Legacy AJAX method for network requests
+- **Promises & Async/Await** - Making API calls easier and more readable
+- **WebSockets** - Real-time bidirectional communication
 
-💻 **Upcoming Projects:**
-1. **Weather App** – Fetch live weather data from an API
-2. **Notes App** – Store user notes using LocalStorage
+💻 **Practice Tasks:**
+1. **Live User Dashboard** – Comprehensive Web APIs implementation
+2. **Storage Comparison App** - LocalStorage vs SessionStorage demonstration
+3. **Random Joke Fetcher** - API integration using both Fetch and XHR
+4. **WebSocket Messenger** - Real-time communication example
 
 📖 **Resources:**
 - [MDN Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 - [JavaScript.info – Fetch](https://javascript.info/fetch)
+- [MDN WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 
 ---
 
@@ -83,9 +86,11 @@ This repo series covers a **4-week intensive journey** through **DOM (Document O
 - [MDN Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
 - [MDN Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API)
 
-## 🎯 Week 2 Learning Objectives (Current Implementation)
+## 🎯 Learning Objectives (Current Implementation)
 
-This **Week 2** project specifically demonstrates the following BOM concepts:
+This repository demonstrates concepts from **Week 2** and **Week 3**, covering:
+
+### Week 2: BOM (Browser Object Model) Implementation
 
 ### Window Object Methods
 - `window.alert()` - Display alert messages
@@ -117,31 +122,65 @@ This **Week 2** project specifically demonstrates the following BOM concepts:
 - `screen.colorDepth` - Color information
 - `screen.pixelDepth` - Pixel depth details
 
+### Week 3: Web APIs Implementation
+
+### Storage APIs
+- `localStorage.setItem()` & `localStorage.getItem()` - Persistent local storage
+- `sessionStorage.setItem()` & `sessionStorage.getItem()` - Session-based storage
+- Storage event handling and data persistence
+
+### Network APIs
+- **Fetch API** - Modern HTTP requests with promises
+- **XMLHttpRequest** - Traditional AJAX implementation
+- **JSON parsing** - `response.json()` and `JSON.parse()`
+- **Error handling** - Try-catch blocks and response validation
+
+### WebSocket API
+- **Real-time Communication** - Bidirectional client-server messaging
+- **WebSocket Events** - `open`, `message`, `close`, `error` event handling
+- **Message Broadcasting** - Sending and receiving live data
+
 ## 🚀 Features
 
-### Interactive Feedback Form
+### Week 2: Interactive Feedback Form
 - **Real-time form validation** with required fields
 - **Dynamic feedback display** using DOM manipulation
 - **Delete functionality** with confirmation dialogs
+- **LocalStorage integration** for persistent feedback storage
 - **Responsive design** that works on all devices
 - **Smooth animations** and modern UI/UX
 
+### Week 3: Live User Dashboard
+- **Storage Comparison** - Side-by-side LocalStorage vs SessionStorage demonstration
+- **API Integration** - Chuck Norris jokes fetched from external API
+- **Dual Request Methods** - Both modern Fetch API and legacy XMLHttpRequest
+- **Real-time WebSocket** - Live messaging with echo server
+- **Error Handling** - Comprehensive try-catch blocks and user feedback
+- **Clean Modern UI** - Responsive design with intuitive user experience
+
 ### Technical Implementation
-- Pure JavaScript (Vanilla JS) - No frameworks
-- CSS3 with modern features (Grid, Flexbox, Animations)
-- HTML5 semantic structure
-- Event handling and DOM manipulation
-- Error handling with try-catch blocks
+- **Pure JavaScript (Vanilla JS)** - No frameworks or libraries
+- **Modern Web APIs** - Storage, Fetch, WebSockets implementation
+- **CSS3 with modern features** - Grid, Flexbox, Animations
+- **HTML5 semantic structure** - Accessible and semantic markup
+- **Event handling and DOM manipulation** - Interactive user interfaces
+- **Error handling** - Comprehensive try-catch blocks
+- **Asynchronous Programming** - Promises, async/await, and callbacks
 
 ## 📁 Project Structure
 
 ```
-week1/
-├── index.html          # Main HTML structure
-├── script.js           # DOM manipulation & form handling
-├── week2.script.js     # BOM/Window object examples
-├── styles.css          # Modern CSS styling
-└── README.md           # Project documentation
+DOM-BOM-WEB-APIs/
+├── index.html              # Week 2: Main feedback form HTML
+├── script.js               # Week 2: DOM manipulation & form handling
+├── styles.css              # Week 2: Modern CSS styling
+├── week-2 snippets/
+│   └── week2.script.js     # Week 2: BOM/Window object examples
+├── week-3 example/
+│   ├── index.html          # Week 3: Web APIs dashboard HTML
+│   ├── script.js           # Week 3: Storage, Fetch, WebSocket implementation
+│   └── style.css           # Week 3: Dashboard styling
+└── README.md               # Project documentation
 ```
 
 ## 🔧 Installation & Setup
@@ -160,7 +199,7 @@ week1/
 
 2. **Navigate to the project directory:**
    ```bash
-   cd Week-2-DOM-BOM-Window-Manipulation/week1
+   cd Week-2-DOM-BOM-Window-Manipulation
    ```
 
 3. **Open in browser:**
@@ -183,6 +222,8 @@ week1/
 
 ## 🎮 How to Use
 
+### Week 2: Feedback Form Application
+
 1. **Fill out the feedback form:**
    - Enter your name in the first field
    - Type your feedback in the textarea
@@ -190,13 +231,32 @@ week1/
 
 2. **Interact with feedback:**
    - View all submitted feedback in the list below
+   - All feedback is automatically saved to LocalStorage
    - Click the ❌ button to delete any feedback item
    - Confirm deletion in the popup dialog
 
 3. **Explore BOM examples:**
    - Open browser console (F12)
-   - Check `week2.script.js` for window object demonstrations
+   - Check `week-2 snippets/week2.script.js` for window object demonstrations
    - See alerts, prompts, and timing functions in action
+
+### Week 3: Web APIs Dashboard
+
+1. **Test Storage APIs:**
+   - Navigate to `week-3 example/index.html`
+   - Enter your name in the input field
+   - Click "Save to LocalStorage" or "Save to SessionStorage"
+   - Observe the differences in data persistence
+
+2. **Fetch API Demonstrations:**
+   - Click "Get Joke (Fetch API)" to see modern HTTP requests
+   - Click "Get Joke (XHR)" to compare with legacy XMLHttpRequest
+   - Both buttons fetch random jokes from Chuck Norris API
+
+3. **WebSocket Communication:**
+   - Observe real-time messages appearing in the WebSocket section
+   - Messages are sent automatically on connection
+   - See live bidirectional communication in action
 
 ## 📚 Learning Resources
 
@@ -217,12 +277,16 @@ week1/
 
 ## 🎨 Key Features Demonstrated
 
-### DOM Manipulation
+### Week 2: DOM Manipulation & BOM
 ```javascript
 // Creating and appending elements
 const li = document.createElement("li");
 li.innerText = `${nameInput}: ${feedbackInput}`;
 feedbackList.appendChild(li);
+
+// LocalStorage integration
+let feedbackList = JSON.parse(localStorage.getItem("feedbackList")) || [];
+localStorage.setItem("feedbackList", JSON.stringify(feedbackList));
 ```
 
 ### Event Handling
@@ -230,7 +294,7 @@ feedbackList.appendChild(li);
 // Form submission with validation
 form.addEventListener("submit", function (e) {
     e.preventDefault();
-    // Handle form data
+    // Handle form data with comprehensive validation
 });
 ```
 
@@ -246,17 +310,62 @@ window.location.reload();
 window.history.back();
 ```
 
+### Week 3: Web APIs Implementation
+
+### Storage APIs
+```javascript
+// LocalStorage - Persistent storage
+localStorage.setItem("username", name);
+const local = localStorage.getItem("username");
+
+// SessionStorage - Session-based storage
+sessionStorage.setItem("username", name);
+const session = sessionStorage.getItem("username");
+```
+
+### Modern Fetch API
+```javascript
+// Async/await with error handling
+const res = await fetch("https://api.chucknorris.io/jokes/random");
+const data = await res.json();
+document.getElementById("jokeDisplay").textContent = data.value;
+```
+
+### Legacy XMLHttpRequest
+```javascript
+// Traditional AJAX implementation
+const xhr = new XMLHttpRequest();
+xhr.open("GET", "https://api.chucknorris.io/jokes/random");
+xhr.onload = function () {
+    if (xhr.status === 200) {
+        const data = JSON.parse(xhr.responseText);
+        document.getElementById("jokeDisplay").textContent = data.value;
+    }
+};
+xhr.send();
+```
+
+### WebSocket Real-time Communication
+```javascript
+// WebSocket connection and event handling
+const socket = new WebSocket("wss://ws.postman-echo.com/raw");
+
+socket.addEventListener("open", () => {
+    socket.send("Hello from Zunair's Class!");
+});
+
+socket.addEventListener("message", (event) => {
+    const li = document.createElement("li");
+    li.textContent = `Server: ${event.data}`;
+    document.getElementById("messages").appendChild(li);
+});
+```
+
 ## 🚀 Next Steps in the Curriculum
 
-After mastering this **Week 2: BOM & Window Manipulation**, you'll progress to:
+After mastering **Week 2: BOM & Window Manipulation** and **Week 3: Web APIs & Network Programming**, you'll progress to:
 
-### **🔜 Week 3: Web APIs & Network Programming**
-- **LocalStorage & SessionStorage** - Persistent data storage
-- **Fetch API & Async/Await** - Modern API communication
-- **Weather App Project** - Real API integration
-- **Notes App Project** - LocalStorage implementation
-
-### **🔮 Week 4: Advanced Web APIs**
+### ** Week 4: Advanced Web APIs**
 - **Geolocation API** - Location-based features
 - **Clipboard API** - Copy/paste functionality
 - **Intersection Observer** - Lazy loading implementation
@@ -285,23 +394,23 @@ This project is open source and available under the [MIT License](LICENSE).
 
 This project is part of a comprehensive **4-week DOM, BOM & Web APIs course** covering:
 - **Week 1**: DOM Fundamentals & Element Manipulation ✅
-- **Week 2**: BOM & Window Object Manipulation *(Current - This Repository)* 🎯
-- **Week 3**: Web APIs, Storage & Network Requests 🔜
-- **Week 4**: Advanced Web APIs & Real-World Implementation 🔮
+- **Week 2**: BOM & Window Object Manipulation ✅
+- **Week 3**: Web APIs, Storage & Network Requests ✅
+- **Week 4**: Advanced Web APIs & Real-World Implementation �
 
 ### 🎯 Course Progression
 Each week builds comprehensive understanding:
-1. **Foundation** → DOM mastery and element manipulation
-2. **Browser APIs** → Window, Navigator, Location objects *(Current)*
-3. **Data & Network** → Storage, Fetch API, Async operations
-4. **Advanced** → Geolocation, Clipboard, Intersection Observer
+1. **Foundation** → DOM mastery and element manipulation ✅
+2. **Browser APIs** → Window, Navigator, Location objects ✅
+3. **Data & Network** → Storage, Fetch API, Async operations ✅
+4. **Advanced** → Geolocation, Clipboard, Intersection Observer 🔜
 
 ---
 
 ### 👨‍💻 Developer Information
 **Course**: Hayatian Computing Alumni - Web Development  
-**Current Week**: 2 of 4  
-**Focus**: DOM/BOM Manipulation & Window Objects  
-**Repository**: Week 2 Implementation
+**Current Implementation**: Week 2 & 3 (of 4)  
+**Focus**: DOM/BOM Manipulation, Window Objects, Web APIs & Network Programming  
+**Repository**: Complete Week 2-3 Implementation
 
 **Happy Learning! 🚀**
