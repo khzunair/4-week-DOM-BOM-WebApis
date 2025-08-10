@@ -27,7 +27,7 @@ This repo series covers a **4-week intensive journey** through **DOM (Document O
 
 ---
 
-### **📅 Week 2: BOM (Browser Object Model) & Window Manipulation** 🎯 **(Current Week)**
+### **📅 Week 2: BOM (Browser Object Model) & Window Manipulation**  ✅ 
 
 📌 **Concepts Covered:**
 - Window Object (`window.alert`, `window.confirm`, `window.prompt`)
